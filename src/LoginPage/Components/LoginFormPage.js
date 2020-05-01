@@ -1,29 +1,35 @@
 import React, { Component } from 'react';
-import fbIcon from '../images/fb.png';
-import twIcon from '../images/tw.png';
-import googleIcon from '../images/gp.png';
 
 class LoginFormPage extends Component {
   render() {
     return (
-      <section>
-        <div className="loginForm-container">
-          <div className="switchButtons-conatiner">
-            <div className="switch-buttons"></div>
-            <button type="button" className="toggle-button">
+      <div class="wrap">
+        <form class="login-form" action="">
+          <div class="form-header">
+            <h3>Login Form</h3>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-input" placeholder="password" />
+          </div>
+
+          <div class="form-group">
+            <button class="form-button" type="submit">
               Login
             </button>
-            <button type="button" className="toggle-button">
-              Register
-            </button>
           </div>
-          <div className="social-icons">
-            <img src={fbIcon} alt="facebook icon" />
-            <img src={twIcon} alt="twitter Icon" />
-            <img src={googleIcon} alt="google Icon" />
+          <div class="form-footer">
+            Don't have an account? <a href="#/">Sign Up</a>
           </div>
-        </div>
-      </section>
+        </form>
+      </div>
     );
   }
 }

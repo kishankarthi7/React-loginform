@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import ham from '../images/ham.svg';
-import exit from '../images/iconmonstr-x-mark-7.svg';
+import ham from '../images/iconmonstr-menu-6.svg';
+import exit from '../images/exit.svg';
 
 class LoginPageHeader extends Component {
   render() {
     return (
-      <header>
-        <h2>Trafficnow</h2>
+      <header className="loginpage-header">
+        <h2 className="Logo">
+          <span style={{ color: 'red' }}>Traffic</span>
+          <span style={{ color: 'green' }}>now</span>
+        </h2>
 
         <nav>
           <a href="/#" className="hide-desktop">
             <img src={ham} alt="toggle menu" className="menu" id="menu" />
           </a>
 
-          <ul className="show-desktop hide-desktop" id="nav">
+          <ul className="show-desktop hide-mobile" id="nav">
             <li id="exit" className="exit-btn hide-desktop">
               <img src={exit} alt="exit menu" />
             </li>
@@ -28,9 +31,6 @@ class LoginPageHeader extends Component {
             </li>
             <li>
               <a href="/#">PRICING</a>
-            </li>
-            <li>
-              <button>REGISTER</button>
             </li>
           </ul>
         </nav>

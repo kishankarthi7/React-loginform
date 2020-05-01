@@ -5,20 +5,22 @@ class LoginPageFooter extends Component {
     return (
       <footer>
         <div className="footer-conatiner">
-          <h2>Logo</h2>
-          <p className="footer-adddress">
-            Barcelona, 08001
-            <br />
-            Spain
-          </p>
-          <ul className="footer-links">
-            <li>
-              <a href="#/">Terms of Service</a>
-            </li>
-            <li>
-              <a href="#/">Privacy policy</a>
-            </li>
-          </ul>
+          <div className="container">
+            <h2>Logo</h2>
+            <p className="footer-adddress">
+              Barcelona, 08001
+              <br />
+              Spain
+            </p>
+            <ul className="footer-links">
+              <li>
+                <a href="#/">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#/">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     );
