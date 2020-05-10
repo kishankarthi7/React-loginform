@@ -1,0 +1,14 @@
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}

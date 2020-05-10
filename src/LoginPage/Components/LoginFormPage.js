@@ -1,35 +1,18 @@
 import React, { Component } from 'react';
+import SignInPage from './SignInPage';
 
 class LoginFormPage extends Component {
   render() {
     return (
-      <div class="wrap">
-        <form class="login-form" action="">
-          <div class="form-header">
-            <h3>Login Form</h3>
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-input"
-              placeholder="email@example.com"
-            />
-          </div>
-
-          <div class="form-group">
-            <input type="password" class="form-input" placeholder="password" />
-          </div>
-
-          <div class="form-group">
-            <button class="form-button" type="submit">
-              Login
-            </button>
-          </div>
-          <div class="form-footer">
-            Don't have an account? <a href="#/">Sign Up</a>
-          </div>
-        </form>
-      </div>
+      <section className="login-form-page">
+        <section className="loginForm-quote">
+          <p>
+            You can have data without information, but you cannot have
+            information without data
+          </p>
+        </section>
+        <SignInPage className="signin-page" />
+      </section>
     );
   }
 }

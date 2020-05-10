@@ -5,6 +5,7 @@ body,
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  color: black;
 }
 
 h2 {

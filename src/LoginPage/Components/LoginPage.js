@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import LoginPageHeader from './LoginPageHeader';
-import LoginPageFooter from './LoginPageFooter';
-import LoginFormPage from './LoginFormPage';
 import '../css/LoginPage.css';
+import SignInPage from './SignInPage';
+import LoginFormPage from './LoginFormPage';
 
 class LoginPage extends Component {
   render() {
@@ -10,12 +10,21 @@ class LoginPage extends Component {
       <>
         <div className="container">
           <LoginPageHeader />
-          <LoginFormPage />
+          <SignInPage />
         </div>
-        <LoginPageFooter />
       </>
     );
   }
 }
 
 export default LoginPage;
+
+// return (
+//   <>
+//     <div className="container">
+//       <LoginPageHeader />
+//       <LoginFormPage />
+//     </div>
+//     <LoginPageFooter />
+//   </>
+// );
