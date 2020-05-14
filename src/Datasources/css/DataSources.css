@@ -6,9 +6,105 @@ body,
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   color: black;
+  margin: 0;
+  font-size: 18px;
+  background-color: #f7f7fb;
+}
+
+/* Typograpgy */
+header {
+  box-sizing: border-box;
+  padding: 3em;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Layout */
+
+* {
+  margin: 0;
+}
+
+h2 {
+  border-radius: 1px;
 }
 
 .card-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../images/bird-s-eye-view-of-city-during-dawn-2093323.jpg);
+
+  min-height: 300px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.card {
+  max-width: 350px;
+  margin: 1.1em 0;
+  text-align: center;
+  box-shadow: 0.3em 0.3em 0.7em 0 #e8e6fd;
+  margin-bottom: 4rem;
+  background-color: white;
+  border-radius: 0.4em;
+}
+
+.card-logo {
+  position: relative;
+  background: white;
+  top: -3em;
+  width: 50%;
+  height: 6em;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.card-logo h2 {
+  position: relative;
+  top: 25px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card-title {
+  position: relative;
+  margin-bottom: 1em;
+  top: -70px;
+}
+
+.card-description {
+  position: relative;
+  top: -70px;
+}
+
+.columns {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    max-width: 250px;
+  }
 }
